@@ -1,0 +1,50 @@
+{
+  "name": "@kriptonio/hardhat-plugin",
+  "version": "0.6.0",
+  "description": "Hardhat Kriptonio plugin",
+  "author": "kriptonio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kriptonio/hardhat-plugin"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "hardhat",
+    "hardhat-plugin",
+    "kriptonio"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepublishOnly": "yarn build"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "11.0.4",
+    "@types/node": "20.11.19",
+    "@typescript-eslint/eslint-plugin": "7.0.2",
+    "@typescript-eslint/parser": "7.0.2",
+    "eslint": "8.56.0",
+    "hardhat": "2.20.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3"
+  },
+  "peerDependencies": {
+    "hardhat": "2"
+  },
+  "dependencies": {
+    "@inquirer/password": "2.0.0",
+    "@inquirer/prompts": "4.1.0",
+    "@kriptonio/sdk": "0.1.30"
+  }
+}
